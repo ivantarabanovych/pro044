@@ -1,14 +1,21 @@
-interface Person{
-    name: string;
-    age: number;
+function addNumbers(a:number, b:number):number{
+    return(a + b);
 }
 
-let user: Person = {
-    name: "Ivan",
-    age: 21
-};
+const sum = addNumbers(5, 10);
+console.log(sum);
 
-console.log(user);
+function identity<T>(arg: T): T{
+    return arg;
+}
+
+const stringIdentity = identity <string>("Hello, Generics!");
+console.log(stringIdentity);
+
+const numberIdentity = identity <number>(21);
+console.log(numberIdentity);
+
+
 
 
 
