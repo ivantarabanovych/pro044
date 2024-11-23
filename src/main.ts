@@ -1,10 +1,14 @@
-const numbers: number[] = [1, 2, 3, 4, 5];
-const fruits: string[] = ["apple", "banana", "cherry"];
+interface Person{
+    name: string;
+    age: number;
+}
 
-const person: [number, string] = [21, "Ivan"];
+let user: Person = {
+    name: "Ivan",
+    age: 21
+};
 
-console.log("Numbers array:", numbers);
-console.log("Fruits array:", fruits);
-console.log("Tuple Person:", person);
+console.log(user);
+
 
 
