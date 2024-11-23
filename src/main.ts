@@ -1,19 +1,19 @@
-function addNumbers(a:number, b:number):number{
-    return(a + b);
+enum Role{
+    Admin = "Admin",
+    User = "User",
+    Guest = "Guest"
 }
 
-const sum = addNumbers(5, 10);
-console.log(sum);
+let currentRole: Role | "SupperAdmin";
 
-function identity<T>(arg: T): T{
-    return arg;
-}
+currentRole = Role.Admin;
+console.log("Current Role (Admin):", currentRole);
 
-const stringIdentity = identity <string>("Hello, Generics!");
-console.log(stringIdentity);
+currentRole = "SupperAdmin";
+console.log("Current Role(SupperAdmin):", currentRole);
 
-const numberIdentity = identity <number>(21);
-console.log(numberIdentity);
+
+
 
 
 
