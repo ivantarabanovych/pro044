@@ -1,9 +1,10 @@
-const userName: string = "Ivan";
-const age: number = 25;
-const isStudent: boolean = true;
+const numbers: number[] = [1, 2, 3, 4, 5];
+const fruits: string[] = ["apple", "banana", "cherry"];
 
-function greet(name: string): string {
-    return `Hello, ${name}!`;
-}
+const person: [number, string] = [21, "Ivan"];
 
-console.log(greet(userName));
+console.log("Numbers array:", numbers);
+console.log("Fruits array:", fruits);
+console.log("Tuple Person:", person);
+
+
